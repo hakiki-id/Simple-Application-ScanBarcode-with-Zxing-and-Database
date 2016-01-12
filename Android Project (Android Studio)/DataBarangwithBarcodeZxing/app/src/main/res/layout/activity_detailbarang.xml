@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeParent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rlatifbarang">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#1a9ce2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="NAMA BARANG"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nama Barang"
+            android:textSize="30sp"
+            android:id="@+id/tvNamaBarang"
+            android:textColor="#01075e"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RlatifStok"
+        android:layout_below="@id/Rlatifbarang">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#1274b6"
+            android:id="@+id/ViewStock"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="STOK BARANG"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="STOK"
+            android:id="@+id/tvStock"
+            android:textSize="50sp"
+            android:textColor="#1df700"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RlatifHarga"
+        android:layout_below="@id/RlatifStok">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#113349"
+            android:id="@+id/ViewStock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="HARGA BARANG"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Harga"
+            android:textSize="30sp"
+            android:id="@+id/tvHarga"
+            android:textColor="#d0da02"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+   
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="kembali"
+        android:id="@+id/btnback"
+        android:onClick="btnBack"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/RlatifHarga"/>
+
+
+</RelativeLayout>
